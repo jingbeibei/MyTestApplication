@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 for(String p: mSelectPath){
                     sb.append(p);
                    // sb.append("\n");
+                    System.out.println(sb);
                 }
                 tv.setText(sb.toString());
                 Bitmap bt= BitmapFactory.decodeFile(sb.toString());
