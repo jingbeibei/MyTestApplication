@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     private Context context;
-    private static final String[] mTitles = {"tab1", "tab2", "tab3"};
+    private static final String[] mTitles = {"ZHUYE", "tab2", "tab3"};
 
     public SimpleFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);

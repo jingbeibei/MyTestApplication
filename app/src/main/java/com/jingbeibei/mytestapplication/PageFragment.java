@@ -41,10 +41,11 @@ public class PageFragment extends android.support.v4.app.Fragment {
         View view = inflater.inflate(R.layout.fragment_page, container, false);
         TextView textView = (TextView) view.findViewById(R.id.TV);
         textView.setText("Fragment #" + mPage);
+        if (mPage==1){
         banner = (Banner) view.findViewById(R.id.banner);
         //一步搞定，设置图片就行了
         banner.setImages(images);
-        banner.setBannerStyle(BannerConfig.NUM_INDICATOR);
+        banner.setBannerStyle(BannerConfig.NUM_INDICATOR);}
         return view;
     }
 }
