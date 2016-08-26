@@ -27,7 +27,7 @@ private SimpleFragmentPagerAdapter  pagerAdapter;
         tabLayout.setupWithViewPager(viewPager);
       TabLayout.Tab one=tabLayout.getTabAt(0);
       TabLayout.Tab  two=tabLayout.getTabAt(1);
-        TabLayout.Tab three =tabLayout.getTabAt(3);
+        TabLayout.Tab three =tabLayout.getTabAt(2);
         one.setIcon(R.drawable.selector_menu_home);
         two.setIcon(R.mipmap.ic_launcher);
         three.setCustomView(R.layout.item_tab_layout_custom);
