@@ -23,10 +23,10 @@ public class PageFragment extends android.support.v4.app.Fragment {
 
     public static final String ARG_PAGE = "ARG_PAGE";
     private int mPage;
-//    private Banner banner;
+    //    private Banner banner;
 //    String[] images= new String[] {"file:///android_asset/1.png","file:///android_asset/2.png","file:///android_asset/3.png"};
 //    String[] titles=new String[]{"标题"};
-private ImageSlideshow imageSlideshow;
+    private ImageSlideshow imageSlideshow;
     private List<String> imageUrlList;
     private List<String> titleList;
 
@@ -62,8 +62,7 @@ private ImageSlideshow imageSlideshow;
         // 初始化数据
         initData();
 
-        // 为ImageSlideshow设置数据
-        imageSlideshow.setDotSpace(12);
+        // 为ImageSlideshow设置数据        imageSlideshow.setDotSpace(12);
         imageSlideshow.setDotSize(12);
         imageSlideshow.setDelay(3000);
         imageSlideshow.setOnItemClickListener(new ImageSlideshow.OnItemClickListener() {
@@ -71,20 +70,20 @@ private ImageSlideshow imageSlideshow;
             public void onItemClick(View view, int position) {
                 switch (position) {
                     case 0:
-                        Toast.makeText(getActivity(),"0",Toast.LENGTH_LONG);
+                        Toast.makeText(getActivity(), "0", Toast.LENGTH_LONG).show();
 //                        startActivity(new Intent(MainActivity.this,Activity_1.class));
                         break;
                     case 1:
-                        Toast.makeText(getContext(),"1",Toast.LENGTH_LONG);
+                        Toast.makeText(getContext(), "1", Toast.LENGTH_LONG).show();
                         break;
                     case 2:
-                        Toast.makeText(getContext(),"2",Toast.LENGTH_LONG);
+                        Toast.makeText(getContext(), "2", Toast.LENGTH_LONG).show();
                         break;
                     case 3:
-                        Toast.makeText(getContext(),"3",Toast.LENGTH_LONG);
+                        Toast.makeText(getContext(), "3", Toast.LENGTH_LONG).show();
                         break;
                     case 4:
-                        Toast.makeText(getContext(),"4",Toast.LENGTH_LONG);
+                        Toast.makeText(getContext(), "4", Toast.LENGTH_LONG).show();
                         break;
                 }
             }
@@ -92,6 +91,7 @@ private ImageSlideshow imageSlideshow;
         imageSlideshow.commit();
         return view;
     }
+
     /**
      * 初始化数据
      */
@@ -110,6 +110,7 @@ private ImageSlideshow imageSlideshow;
             imageSlideshow.addImageTitle(imageUrls[i], titles[i]);
         }
     }
+
     @Override
     public void onDestroy() {
         // 释放资源

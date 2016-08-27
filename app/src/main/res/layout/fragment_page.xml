@@ -4,14 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/TV"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:gravity="center"></TextView>
+
 
  <com.jingbeibei.mytestapplication.ImageSlideshow.ImageSlideshow
      android:id="@+id/is_gallery"
      android:layout_width="match_parent"
      android:layout_height="212dp"></com.jingbeibei.mytestapplication.ImageSlideshow.ImageSlideshow>
+    <TextView
+        android:id="@+id/TV"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"></TextView>
 </LinearLayout>
