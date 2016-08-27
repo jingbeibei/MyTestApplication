@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <TextView
         android:id="@+id/TV"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:gravity="center">
-    </TextView>
-    <com.youth.banner.Banner
-android:background="#FAA"
-        android:id="@+id/banner"
-        android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:gravity="center"></TextView>
 
+ <com.jingbeibei.mytestapplication.ImageSlideshow.ImageSlideshow
+     android:id="@+id/is_gallery"
+     android:layout_width="match_parent"
+     android:layout_height="212dp"></com.jingbeibei.mytestapplication.ImageSlideshow.ImageSlideshow>
 </LinearLayout>
