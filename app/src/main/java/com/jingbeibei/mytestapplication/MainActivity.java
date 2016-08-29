@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 
 public class MainActivity extends AppCompatActivity {
-private SimpleFragmentPagerAdapter  pagerAdapter;
+    private SimpleFragmentPagerAdapter pagerAdapter;
     private ViewPager viewPager;
     private TabLayout tabLayout;
 
@@ -25,9 +25,9 @@ private SimpleFragmentPagerAdapter  pagerAdapter;
 
         viewPager.setAdapter(pagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
-      TabLayout.Tab one=tabLayout.getTabAt(0);
-      TabLayout.Tab  two=tabLayout.getTabAt(1);
-        TabLayout.Tab three =tabLayout.getTabAt(2);
+        TabLayout.Tab one = tabLayout.getTabAt(0);
+        TabLayout.Tab two = tabLayout.getTabAt(1);
+        TabLayout.Tab three = tabLayout.getTabAt(2);
 //        one.setIcon(R.drawable.selector_menu_home);
 //        two.setIcon(R.mipmap.ic_launcher);
         one.setCustomView(R.layout.item_tab_layout_custom);
